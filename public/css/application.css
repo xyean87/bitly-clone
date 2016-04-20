@@ -1,0 +1,18 @@
+body {
+  background-image: url(http://vignette3.wikia.nocookie.net/steamtradingcards/images/9/93/Dementium_II_HD_Background_A_Witch_Among_Us.jpg/revision/latest?cb=20140728071659);
+  background-image: background-repeat:no-repeat;
+  
+ 
+}
+
+h1 {text-align: center;
+    color:white;
+    font-size:400%;
+}
+
+p{color:cornsilk;
+  text-align: center;
+}
+
+form{ text-align: center}
+

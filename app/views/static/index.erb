@@ -1,2 +1,27 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<!-- <h1>K.I.S.S</h1>
+<p>simplify everything!</p>
+
+<form action="/urls" method="post">
+	Enter URL:
+	<input type ="text" name="long_url">
+	<input type="submit" value="Submit">
+</form>
+
+<h3> This is your shortn'd Link:</h3>
+<% if @url %>
+	<a href=<%= @url.shorten_url_text %>  http://bit.ly/ <%= @url.shorten_url_text %></a>
+<%end%>
+ -->
+ 
+<h1>Headache of Long URL?</h1>
+<p>We have way to get rid of them.</p>
+<form action="/urls" method="post">
+	<input id="input_box" type="text" name="long_url" placeholder="Insert here!">
+	<input id="submit_button" type="submit" value="Simplify it!">
+</form>
+
+<% if @url_obj %>
+	<div id="rectangle"></div>
+	<h3 id="short_link_label">Here's your clean URL:</h3>
+	<a id="short_link_actual" href=<%= @url_obj.short_url %>>http://www.shor.tn/<%= @url_obj.short_url %></a>
+<% end %>
